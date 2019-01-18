@@ -23,3 +23,15 @@ context.lineTo(150, 10);
 context.stroke();
 context.fill();
 context.closePath();
+
+// Text zeichnen
+context.font = "bold 40px  monospace";
+context.strokeText("Hallo", 20, 120);   // Rand
+context.fillText("Hallo", 20, 120);    //  Fuellung
+
+// Kreisbogen
+context.beginPath();
+context.arc(120, 120, 30, 0, 2 * Math.PI, false);
+context.stroke();
+context.fill();
+context.closePath();
